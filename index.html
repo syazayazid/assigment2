@@ -49,7 +49,54 @@
             padding: 10px 15px;
             
         }
-  
+
+        nav ul li a:hover {
+      color: #F4BA30;
+    }
+
+    .active {
+        color: #F4BA30;
+    }
+   .display-flex{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+   }
+
+   h3 {
+
+    font-size: 16px;
+    padding: 0px;
+    margin: 0px;
+    color:#494949
+   }
+
+   h2{
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    color:#494949;
+
+   }
+
+.custom-button {
+  padding: 10px 20px;           /* Space inside the button */
+  background-color: #F4BA30;    /* Button background color */
+  color: black;                 /* Text color */
+  border: none;                 /* No border */
+  border-radius: 5px;           /* Rounded corners */
+  cursor: pointer;              /* Cursor changes to pointer on hover */
+  font-size: 16px;              /* Font size */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.custom-button:hover {
+  background-color: #f5cb69;    /* Change color on hover */
+}
+
+    
     </style>
 
 </head>
@@ -57,20 +104,25 @@
     <div class="box" style="display: flex; flex-direction: column; border-color: black; gap: 16px; padding-bottom: 0px;">
         <div class="box" style="display: flex; flex-direction: column; gap: 16px; align-items: center; flex-wrap: wrap;">
             <div style="height: 100px; width: 1200px; background-color: #2A2C2E; border-radius: 20px; justify-content: center; display: flex; flex-direction: row; gap: 16px;">
-              <div class="box"></div>
+              <div class="display-flex">
+                <img src="image/logo.png" alt="logo" width ="80px" height="80px" >
+                <a href="index.html" style="color: white; text-decoration: none;">BOOKSHELF</a>
+              </div>
               <nav>
                 <ul>
                     <li>
-                        <a href="#book">Book</a>
+                        <a href="#book" class="active">Book</a>
                         <a href="#authors">Authors</a>
                         <a href="#whattoread">What to Read?</a>
-                        <a href="giftidea">Gift Ideas</a>
-                        <a href="aboutus">About Us</a>
+                        <a href="#giftidea">Gift Ideas</a>
+                        <a href="#aboutus">About Us</a>
                     </li>
                 </ul>
             </nav>
               <div class="box"></div>
-              <div class="box"></div>
+              <div class="box">
+                <button class="custom-button" type="submit" style="margin-top: 15px;">Login</button>
+              </div>
             </div>
         </div>
         <div style="display: flex; flex-direction: row; height: 80px; background-color: #F4CE47; justify-content: center; gap: 16px;">
@@ -82,19 +134,154 @@
         </div>
         <div class="box" style="display: flex; flex-direction: column; border-color:blueviolet; gap: 16px; flex-wrap: wrap; background-color: #2A2C2E;">
             <div class="box" style="display: flex; flex-direction: row; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;"></div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;"></div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;"></div>
+                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
+                    <img src = "image/book1.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div>
+                        <ul style="padding-right: 130px;">
+                            <h3>Percival Evert</h3>
+                            <h2>James</h2>
+                        </ul> 
+                    </div>
+                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
+                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px;"></div>
+                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                    </div>
+                    <div>
+                        <h3 style="padding-right: 130px;" >$10.50</h3>
+                    </div>
+                </div>
+                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
+                    <img src = "image/book2.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div>
+                        <ul style="padding-right: 130px;">
+                            <h3>Miranda July</h3>
+                            <h2>All Fours</h2>
+                        </ul> 
+                    </div>
+                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
+                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                    </div>
+                    <div>
+                        <h3 style="padding-right: 130px;" >$10.50</h3>
+                    </div>
+                </div>
+                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
+                    <img src = "image/book3.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div>
+                        <ul style="padding-right: 130px;">
+                            <h3>Kaveh Akbar</h3>
+                            <h2>Martyr</h2>
+                        </ul> 
+                    </div>
+                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
+                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                    </div>
+                    <div>
+                        <h3 style="padding-right: 130px;" >$10.50</h3>
+                    </div> 
+                </div>
             </div>
             <div class="box" style="display: flex; flex-direction: row; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;"></div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;"></div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;"></div>
+                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
+                    <img src = "image/book4.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div>
+                        <ul style="padding-right: 130px;">
+                            <h3>Holly Gramazio</h3>
+                            <h2>Husbands</h2>
+                        </ul> 
+                    </div>
+                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
+                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                    </div>
+                    <div>
+                        <h3 style="padding-right: 130px;" >$10.50</h3>
+                    </div> 
+                </div>
+                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
+                    <img src = "image/book5.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div>
+                        <ul style="padding-right: 130px;">
+                            <h3>Dolly Alderton</h3>
+                            <h2>Good Material</h2>
+                        </ul> 
+                    </div>
+                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
+                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                    </div>
+                    <div>
+                        <h3 style="padding-right: 130px;" >$10.50</h3>
+                    </div> 
+                </div>
+                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
+                    <img src = "image/book6.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div>
+                        <ul style="padding-right: 130px;">
+                            <h3>Kiley Reid</h3>
+                            <h2>Come & Get It</h2>
+                        </ul> 
+                    </div>
+                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
+                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                    </div>
+                    <div>
+                        <h3 style="padding-right: 130px;" >$10.50</h3>
+                    </div> 
+                </div>
             </div>
             <div class="box" style="display: flex; flex-direction: row; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;"></div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;"></div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;"></div>
+                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
+                    <img src = "image/book7.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div>
+                        <ul style="padding-right: 130px;">
+                            <h3>Hanif Abdurraqib</h3>
+                            <h2>On Basketball and Ascension</h2>
+                        </ul> 
+                    </div>
+                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
+                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                    </div>
+                    <div>
+                        <h3 style="padding-right: 130px;" >$10.50</h3>
+                    </div>  
+                </div>
+                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
+                    <img src = "image/book8.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div>
+                        <ul style="padding-right: 130px;">
+                            <h3>Andrew Boryga</h3>
+                            <h2>Victim</h2>
+                        </ul> 
+                    </div>
+                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
+                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                    </div>
+                    <div>
+                        <h3 style="padding-right: 130px;" >$10.50</h3>
+                    </div> 
+                </div>
+                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;display: flex; flex-direction: column; align-items: center;">
+                    <img src = "image/book9.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div>
+                        <ul style="padding-right: 130px;">
+                            <h3>Chris Whitaker</h3>
+                            <h2>All The Colors of The Dark</h2>
+                        </ul> 
+                    </div>
+                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
+                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+                    </div>
+                    <div>
+                        <h3 style="padding-right: 130px;" >$10.50</h3>
+                    </div> 
+                </div>
             </div>
         </div>
         <div class="box" style="display: flex; align-items: center; flex-wrap: wrap; flex-direction: column; gap: 16px; padding-top: 20px; padding-bottom: 0px;">
