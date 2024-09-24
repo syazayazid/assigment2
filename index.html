@@ -3,25 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assigement 2</title>
     <style>
 
         body {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 0px;
+            margin: 0px;
             
 
         }
 
         .box {
-            border: 1px solid black;
+            border: 1px;
             min-height: 50px;
-            padding: 10px;
+            /*padding: 10px;*/
             font-family: Arial, Helvetica, sans-serif;
             
         }
 
+        .book-box {
+            border: 1px solid black;
+            padding-top: 20px;
+            height: 577px; 
+            width: 294px; 
+            background-color: #FFFFFF; 
+            border-radius: 20px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
         .text-div{
             color: #F4BA30;
+            font-size: 35px; 
+            padding: 20px;
         }
 
         nav {
@@ -101,9 +118,9 @@
 
 </head>
 <body>
-    <div class="box" style="display: flex; flex-direction: column; border-color: black; gap: 16px; padding-bottom: 0px;">
-        <div class="box" style="display: flex; flex-direction: column; gap: 16px; align-items: center; flex-wrap: wrap;">
-            <div style="height: 100px; width: 1200px; background-color: #2A2C2E; border-radius: 20px; justify-content: center; display: flex; flex-direction: row; gap: 16px;">
+    <div class="box" style="display: flex; flex-direction: column; gap: 16px; padding-bottom: 0px;">
+        <div style="display: flex; flex-direction: column; gap: 16px; align-items: center; flex-wrap: wrap;">
+            <div style= "margin-top: 10px; height: 100px; width: 1200px; background-color: #2A2C2E; border-radius: 20px; justify-content: center; display: flex; flex-direction: row; gap: 16px;">
               <div class="display-flex">
                 <img src="image/logo.png" alt="logo" width ="80px" height="80px" >
                 <a href="index.html" style="color: white; text-decoration: none;">BOOKSHELF</a>
@@ -119,175 +136,203 @@
                     </li>
                 </ul>
             </nav>
-              <div class="box"></div>
-              <div class="box">
-                <button class="custom-button" type="submit" style="margin-top: 15px;">Login</button>
+              <div>
+                <button class="custom-button" type="submit" style="margin-top: 25px;">Login</button>
               </div>
             </div>
         </div>
-        <div style="display: flex; flex-direction: row; height: 80px; background-color: #F4CE47; justify-content: center; gap: 16px;">
-            <div class="text-div" style="font-size: 35px; padding: 20px;">ALL BOOKS</div>
-            <div class="text-div" style="font-size: 35px; padding: 20px;">ALL BOOKS</div>
+        <div style="display: flex; flex-direction: row; height: 80px;background-color: #F4CE47; justify-content: center; gap: 16px;">
+            <div class="text-div" >ALL BOOKS</div>
+            <div class="text-div">ALL BOOKS</div>
             <div style="font-size: 35px; padding: 20px;">ALL BOOKS</div>
-            <div class="text-div" style="font-size: 35px; padding: 20px; ">ALL BOOKS</div>
-            <div class="text-div" style="font-size: 35px; padding: 20px;">ALL BOOKS</div>
+            <div class="text-div">ALL BOOKS</div>
+            <div class="text-div">ALL BOOKS</div>
         </div>
-        <div class="box" style="display: flex; flex-direction: column; border-color:blueviolet; gap: 16px; flex-wrap: wrap; background-color: #2A2C2E;">
-            <div class="box" style="display: flex; flex-direction: row; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
+        <div class="box" style="display: flex; flex-direction: column; gap: 16px; flex-wrap: wrap; background-color: #2A2C2E; padding: 20px;">
+            <div style="display: flex; flex-direction: row; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <div class="book-box">
                     <img src = "image/book1.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
-                    <div>
+                    <div style ="text-align: left; padding: 10px 10px 3px 60px; width: 100%;"><h3>Percival Evert</h3></div>
+                    <div style ="text-align: left; padding: 3px 10px 10px 60px; width: 100%;"><h2>James</h2></div> <!-- width tu ikut ruang div book-box-->
+                   <!--  <div>
                         <ul style="padding-right: 130px;">
                             <h3>Percival Evert</h3>
                             <h2>James</h2>
                         </ul> 
+                    </div> -->
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px; border: 1px;">
+                        <span style = "text-align: left; width: 48px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">14</span>
+                        <span style = "margin-left: 10px; width: 78px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">4.6<span style="text-align: right; padding-left: 20px;">165<span></span>    
                     </div>
-                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
-                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px;"></div>
-                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                    </div>
-                    <div>
-                        <h3 style="padding-right: 130px;" >$10.50</h3>
-                    </div>
-                </div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
-                    <img src = "image/book2.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
-                    <div>
-                        <ul style="padding-right: 130px;">
-                            <h3>Miranda July</h3>
-                            <h2>All Fours</h2>
-                        </ul> 
-                    </div>
-                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
-                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                    </div>
-                    <div>
-                        <h3 style="padding-right: 130px;" >$10.50</h3>
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px;">
+                        <tr>
+                            <span style = "text-decoration: line-through;">$15.50</span>
+                            <span style = "margin-left: 10px;">$10.50</span>
+                        </tr> 
                     </div>
                 </div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
-                    <img src = "image/book3.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
-                    <div>
-                        <ul style="padding-right: 130px;">
-                            <h3>Kaveh Akbar</h3>
-                            <h2>Martyr</h2>
-                        </ul> 
+
+                <div class="book-box">
+                    <img src = "image/book2.jpg" alt="book 2" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div style ="text-align: left; padding: 10px 10px 3px 60px; width: 100%;"><h3>Miranda July</h3></div>
+                    <div style ="text-align: left; padding: 3px 10px 10px 60px; width: 100%;"><h2>All Fours</h2></div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px; border: 1px;">
+                        <span style = "text-align: left; width: 48px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">14</span>
+                        <span style = "margin-left: 10px; width: 78px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">4.6<span style="text-align: right; padding-left: 20px;">165<span></span>    
                     </div>
-                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
-                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px;">
+                        <tr>
+                            <span style = "text-decoration: line-through;">$15.50</span>
+                            <span style = "margin-left: 10px;">$10.50</span>
+                        </tr> 
                     </div>
-                    <div>
-                        <h3 style="padding-right: 130px;" >$10.50</h3>
-                    </div> 
                 </div>
-            </div>
-            <div class="box" style="display: flex; flex-direction: row; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
-                    <img src = "image/book4.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
-                    <div>
-                        <ul style="padding-right: 130px;">
-                            <h3>Holly Gramazio</h3>
-                            <h2>Husbands</h2>
-                        </ul> 
+
+                <div class="book-box">
+                    <img src = "image/book3.jpg" alt="book 3" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div style ="text-align: left; padding: 10px 10px 3px 60px; width: 100%;"><h3>Kaveh Akbar</h3></div>
+                    <div style ="text-align: left; padding: 3px 10px 10px 60px; width: 100%;"><h2>Martyr</h2></div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px; border: 1px;">
+                        <span style = "text-align: left; width: 48px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">14</span>
+                        <span style = "margin-left: 10px; width: 78px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">4.6 <span style="text-align: right; padding-left: 20px;">165<span></span>    
                     </div>
-                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
-                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px;">
+                        <tr>
+                            <span>$10.50</span>
+                        </tr> 
                     </div>
-                    <div>
-                        <h3 style="padding-right: 130px;" >$10.50</h3>
-                    </div> 
-                </div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
-                    <img src = "image/book5.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
-                    <div>
-                        <ul style="padding-right: 130px;">
-                            <h3>Dolly Alderton</h3>
-                            <h2>Good Material</h2>
-                        </ul> 
-                    </div>
-                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
-                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                    </div>
-                    <div>
-                        <h3 style="padding-right: 130px;" >$10.50</h3>
-                    </div> 
-                </div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
-                    <img src = "image/book6.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
-                    <div>
-                        <ul style="padding-right: 130px;">
-                            <h3>Kiley Reid</h3>
-                            <h2>Come & Get It</h2>
-                        </ul> 
-                    </div>
-                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
-                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                    </div>
-                    <div>
-                        <h3 style="padding-right: 130px;" >$10.50</h3>
-                    </div> 
                 </div>
             </div>
-            <div class="box" style="display: flex; flex-direction: row; gap: 16px; justify-content: center; flex-wrap: wrap;">
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
-                    <img src = "image/book7.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
-                    <div>
-                        <ul style="padding-right: 130px;">
-                            <h3>Hanif Abdurraqib</h3>
-                            <h2>On Basketball and Ascension</h2>
-                        </ul> 
+
+            <div style="display: flex; flex-direction: row; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <div class="book-box">
+                    <img src = "image/book4.jpg" alt="book 4" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div style ="text-align: left; padding: 10px 10px 3px 60px; width: 100%;"><h3>Holly Gramazio</h3></div>
+                    <div style ="text-align: left; padding: 3px 10px 10px 60px; width: 100%;"><h2>Husbands</h2></div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px; border: 1px;">
+                        <span style = "text-align: left; width: 48px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">14</span>
+                        <span style = "margin-left: 10px; width: 78px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">4.6 <span style="text-align: right; padding-left: 20px;">165<span></span>    
                     </div>
-                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
-                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+
+                   
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px;">
+                        <tr>
+                            <span>$10.50</span>
+                        </tr> 
                     </div>
-                    <div>
-                        <h3 style="padding-right: 130px;" >$10.50</h3>
-                    </div>  
                 </div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px; display: flex; flex-direction: column; align-items: center;">
-                    <img src = "image/book8.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
-                    <div>
-                        <ul style="padding-right: 130px;">
-                            <h3>Andrew Boryga</h3>
-                            <h2>Victim</h2>
-                        </ul> 
+
+                <div class="book-box">
+                    <img src = "image/book5.jpg" alt="book 5" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div style ="text-align: left; padding: 10px 10px 3px 60px; width: 100%;"><h3>Dolly Alderton</h3></div>
+                    <div style ="text-align: left; padding: 3px 10px 10px 60px; width: 100%;"><h2>Good Material</h2></div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px; border: 1px;">
+                        <span style = "text-align: left; width: 48px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">14</span>
+                        <span style = "margin-left: 10px; width: 78px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">4.6 <span style="text-align: right; padding-left: 20px;">165<span></span>    
                     </div>
-                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
-                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px;">
+                        <tr>
+                            <span>$10.50</span>
+                        </tr> 
                     </div>
-                    <div>
-                        <h3 style="padding-right: 130px;" >$10.50</h3>
-                    </div> 
                 </div>
-                <div class="box" style="height: 577px; width: 294px; background-color: #FFFFFF; border-radius: 20px;display: flex; flex-direction: column; align-items: center;">
-                    <img src = "image/book9.jpg" alt="book 1" style="height: 357px; width: 246px; border-radius: 5px;">
-                    <div>
-                        <ul style="padding-right: 130px;">
-                            <h3>Chris Whitaker</h3>
-                            <h2>All The Colors of The Dark</h2>
-                        </ul> 
+
+                <div class="book-box">
+                    <img src = "image/book6.jpg" alt="book 6" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div style ="text-align: left; padding: 10px 10px 3px 60px; width: 100%;"><h3>Kiley Reid</h3></div>
+                    <div style ="text-align: left; padding: 3px 10px 10px 60px; width: 100%;"><h2>Come & Get It</h2></div>
+                    
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px; border: 1px;">
+                        <span style = "text-align: left; width: 48px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">14</span>
+                        <span style = "margin-left: 10px; width: 78px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">4.6 <span style="text-align: right; padding-left: 20px;">165<span></span>    
                     </div>
-                    <div style="display: flex; flex-direction: row; padding-right: 60px;">
-                        <div style="width: 58px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
-                        <div style="width: 96px; height: 32px; border: 1px solid black; border-radius: 20px; "></div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px;">
+                        <tr>
+                            <span style = "text-decoration: line-through;">$15.50</span>
+                            <span style = "margin-left: 10px;">$10.50</span>
+                        </tr> 
                     </div>
-                    <div>
-                        <h3 style="padding-right: 130px;" >$10.50</h3>
-                    </div> 
                 </div>
             </div>
-        </div>
-        <div class="box" style="display: flex; align-items: center; flex-wrap: wrap; flex-direction: column; gap: 16px; padding-top: 20px; padding-bottom: 0px;">
+
+            <div style="display: flex; flex-direction: row; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <div class="book-box">
+                    <img src = "image/book7.jpg" alt="book 7" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div style ="text-align: left; padding: 10px 10px 3px 60px; width: 100%;"><h3>Hanif Abdurraqib</h3></div>
+                    <div style ="text-align: left; padding: 3px 10px 10px 60px; width: 100%;"><h2>On Basketball and</h2></div>
+                    <div style ="text-align: left; padding: 3px 10px 10px 60px; width: 100%;"><h2>Ascension</h2></div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px; border: 1px;">
+                        <span style = "text-align: left; width: 48px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">14</span>
+                        <span style = "margin-left: 10px; width: 78px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">4.6 <span style="text-align: right; padding-left: 20px;">165<span></span>    
+                    </div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px;">
+                        <tr>
+                            <span>$10.50</span>
+                        </tr> 
+                    </div>
+                </div>
+
+                    <div class="book-box">
+                    <img src = "image/book8.jpg" alt="book 8" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div style ="text-align: left; padding: 10px 10px 3px 60px; width: 100%;"><h3>Andrew Boryga</h3></div>
+                    <div style ="text-align: left; padding: 3px 10px 10px 60px; width: 100%;"><h2>Victim</h2></div>
+                
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px; border: 1px;">
+                        <span style = "text-align: left; width: 48px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">14</span>
+                        <span style = "margin-left: 10px; width: 78px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">4.6 <span style="text-align: right; padding-left: 20px;">165<span></span>    
+                    </div>
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px;">
+                        <tr>
+                            <span style = "text-decoration: line-through;">$15.50</span>
+                            <span style = "margin-left: 10px;">$10.50</span>
+                        </tr> 
+                    </div> 
+                </div>
+
+                <div class="book-box">
+                    <img src = "image/book9.jpg" alt="book 9" style="height: 357px; width: 246px; border-radius: 5px;">
+                    <div style ="text-align: left; padding: 10px 10px 3px 60px; width: 100%;"><h3>Chris Whitaker</h3></div>
+                    <div style ="text-align: left; padding: 3px 10px 10px 60px; width: 100%;"><h2>All The Colors of The Dark</h2></div>
+
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px; border: 1px;">
+                        <span style = "text-align: left; width: 48px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">14</span>
+                        <span style = "margin-left: 10px; width: 78px; height: 20px; padding: 4px; border: 1px solid black; border-radius: 20px;">4.6 <span style="text-align: right; padding-left: 20px;">165<span></span>    
+                    </div>
+                    <div style="display: flex; flex-direction: row; width: 100%; padding: 0px 0px 10px 50px;">
+                        <tr>
+                            <span>$10.50</span>
+                        </tr> 
+                    </div> 
+
+                </div>
+            </div>
+        </div> 
+        <div style="display: flex; align-items: center; flex-wrap: wrap; flex-direction: column; gap: 16px; padding-top: 20px; padding-bottom: 0px;">
             <div style="height: 100px; width: 1200px; background-color: #2A2C2E;">
-                <div></div>
-                <div></div>
+                <div class= "display-flex" style=" height:70px; padding-left: 20px;">
+                    <img src="image/logo.png" alt="logo" width ="80px" height="80px" > 
+                   <a href="index.html" style="color: white; text-decoration: none;">BOOKSHELF</a>
+
+                </div>
+                <div style="padding-bottom: 0px; background-color: black; height: 30px; display: flex; flex-direction: row;">
+                    
+                  <a style="font-size: 10px; color: white; margin-left: 10px; margin-top: 5px; text-decoration: none;" href="#terms"> Terms and conditions</a> 
+                  <a style="font-size: 10px; color: white; margin-left: 10px; margin-top: 5px; text-decoration: none;" href="#privacy"> Privacy policy</a> 
+                  <span style="font-size: 10px; color: white; margin-left: 800px; margin-top: 5px;"> +44 1332 412251</span> 
+                  <span style="font-size: 10px; color: white; margin-left: 10px; margin-top: 5px;"> support@bookshelf.com</span> 
+
+
+                </div>
             </div>
         </div>
     </div>
